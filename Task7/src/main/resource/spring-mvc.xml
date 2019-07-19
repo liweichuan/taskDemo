@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.1.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd ">
+
+    <!--注意：如果配置了<context:component-scan>那么<context:annotation-config/>标签就可以不用再xml中配置了，因为前者包含了后者-->
+    <context:component-scan base-package="com.jnshu.controller">
+        <!--<context:exclude-filter>指定的不扫描，<context:include-filter>指定的扫描-->
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <!--会自动注册RequestMappingHandlerMapping与RequestMappingHandlerAdapter两个Bean,
+    这是Spring MVC为@Controller分发请求所必需的，并且提供了数据绑定支持，
+    @NumberFormatannotation支持，@DateTimeFormat支持,@Valid支持读写XML的支持（JAXB）和读写JSON的支持（默认Jackson）等功能-->
+    <mvc:annotation-driven/>
+
+    <!--配置静态资源访问
+   如果你的DispatcherServlet拦截 *.do这样的URL，就不存在访问不到静态资源的问题。
+   如果你的DispatcherServlet拦截“/”，拦截了所有的请求，同时对*.js,*.jpg的访问也就被拦截了。
+   目的：可以正常访问静态文件，不要找不到静态文件报404-->
+    <!--location是真实的路径，mapping是对外显示的映射的路径。-->
+    <!--<mvc:resources location="/static/image/" mapping="/image/**"/>-->
+    <!--<mvc:resources location="/static/js/" mapping="/js/**"/>-->
+    <!--<mvc:resources location="/static/css/" mapping="/css/**"/>-->
+    <mvc:default-servlet-handler/>
+
+
+    <!-- 配置视图解析器: 把 controller 方法返回值解析为实际的物理视图 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+    p:prefix="/WEB-INF/views/" p:suffix=".jsp">
+    </bean>
+</beans>
