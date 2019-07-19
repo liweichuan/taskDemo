@@ -45,7 +45,6 @@
     </bean>
 
 
-
     <!--让spring管理sqlSessionFactory spring和Mybatis整合-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <!--注入数据库连接池-->
@@ -60,9 +59,7 @@
    对于在basePackage设置的包（包括子包）下的接口类， 如果接口类的全类名在Mapper.xml文件中和定义过命名空间一致，
    将被转换成spring的BEAN，在调用的地方通过@Autowired方式将可以注入接口实例-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.jnshu.mapper"/>
+        <property name="basePackage" value="com.jnshu.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
-
-
 </beans>

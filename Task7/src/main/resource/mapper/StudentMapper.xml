@@ -35,9 +35,9 @@
                            update_time=#{update_time} where name=#{name}
     </update>
     <select id="findStudentById" parameterType="java.lang.Long" resultType="com.jnshu.entity.Student">
-        select name,qq,start_time,graduation,student_id,link,wish,senior from student where id=#{id}
+      select name,qq,start_time,graduation,student_id,link,wish,senior from student where id=#{id}
     </select>
     <select id="findAll" resultType="com.jnshu.entity.Student">
-                select name,qq,start_time,graduation,student_id,link,wish,senior from student
+      select name,qq,start_time,graduation,student_id,link,wish,senior from student
     </select>
 </mapper>
