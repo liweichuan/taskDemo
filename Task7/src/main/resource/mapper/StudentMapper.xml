@@ -3,7 +3,8 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.jnshu.dao.StudentDao">
-    <insert id="addStudent" parameterType="com.jnshu.entity.Student">
+
+<insert id="addStudent" parameterType="Student">
         insert into student(name ,qq,start_time,graduation,student_id,link,wish,senior,create_by,update_by,create_time,update_time)
         values (#{name},
                 #{qq},
@@ -17,11 +18,11 @@
                 #{update_by},
                 #{create_time},
                 #{update_time})
-    </insert>
-    <delete id="deleteStudentByName" parameterType="java.lang.String" >
+</insert>
+<delete id="deleteStudentByName" parameterType="java.lang.String" >
         delete * from student where name=#{name}
-    </delete>
-    <update id="updateStudentByName" parameterType="com.jnshu.entity.Student" >
+</delete>
+<update id="updateStudentByName" parameterType="Student" >
         update student set qq=#{qq},
                            start_time=#{start_time},
                            graduation=#{graduation},
@@ -33,11 +34,11 @@
                            update_by=#{update_by},
                            create_time=#{create_time},
                            update_time=#{update_time} where name=#{name}
-    </update>
-    <select id="findStudentById" parameterType="java.lang.Long" resultType="com.jnshu.entity.Student">
+</update>
+<select id="findStudentById" parameterType="java.lang.Long" resultType="Student">
       select name,qq,start_time,graduation,student_id,link,wish,senior from student where id=#{id}
-    </select>
-    <select id="findAll" resultType="com.jnshu.entity.Student">
+</select>
+<select id="findAll" resultType="Student">
       select name,qq,start_time,graduation,student_id,link,wish,senior from student
-    </select>
+</select>
 </mapper>
