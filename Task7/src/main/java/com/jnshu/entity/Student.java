@@ -15,9 +15,10 @@ public class Student {
     private String link;
     private String wish;
     private String senior;
+    private int status;
     private String create_by;
     private String update_by;
     private Long create_time;
-    private long update_time;
+    private Long update_time;
     //getter&getter
 }
