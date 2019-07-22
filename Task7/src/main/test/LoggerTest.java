@@ -5,33 +5,20 @@ public class LoggerTest {
 
    private static Logger logger = LogManager.getLogger(LoggerTest.class);
 
-    private static boolean hello() {
-        logger.trace("entry");    //等同于logger.entry();但此方法在新版本好像已经废弃
 
-        logger.error("Did it again!");
-
-        logger.info("这是info级信息");
-
-        logger.debug("这是debug级信息");
-
-        logger.warn("这是warn级信息");
-
-        logger.fatal("严重错误");
-
-        logger.trace("exit");
-
-        return false;
-    }
 
     public static void main(String[] args) {
 
         logger.trace("开始主程序");
 
         for (int i = 0; i < 10000; i++) {
-            logger.info("当前i:" + i);
-            if (!LoggerTest.hello()) {
-                logger.error("hello");
+            //random()方法取大于等于0,小于1的double型数据
+            String message="";
+            for (int k=0;k<6;k++){
+                //使用concat将指定字符串连接到结尾
+                message=message.concat(String.valueOf((int)(Math.random()*10)));
             }
+             logger.error(message);
         }
 
         logger.trace("退出程序");

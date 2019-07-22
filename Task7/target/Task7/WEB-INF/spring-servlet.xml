@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.1.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd ">
+
+    <!--注意：如果配置了<context:component-scan>那么<context:annotation-config/>标签就可以不用再xml中配置了，因为前者包含了后者-->
+    <context:component-scan base-package="com.jnshu.controller"/>
+        <!--<context:exclude-filter>指定的不扫描，<context:include-filter>指定的扫描-->
+        <!--<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
+        <!--</context:component-scan>-->
+
+    <!--会自动注册RequestMappingHandlerMapping与RequestMappingHandlerAdapter两个Bean,
+    这是Spring MVC为@Controller分发请求所必需的，并且提供了数据绑定支持，
+    @NumberFormatannotation支持，@DateTimeFormat支持,@Valid支持读写XML的支持（JAXB）和读写JSON的支持（默认Jackson）等功能-->
+    <mvc:annotation-driven/>
+
+    <!--配置静态资源访问
+   如果你的DispatcherServlet拦截 *.do这样的URL，就不存在访问不到静态资源的问题。
+   如果你的DispatcherServlet拦截“/”，拦截了所有的请求，同时对*.js,*.jpg的访问也就被拦截了。
+   目的：可以正常访问静态文件，不要找不到静态文件报404-->
+    <!--location是真实的路径，mapping是对外显示的映射的路径。-->
+    <!--<mvc:resources location="/static/image/" mapping="/image/**"/>-->
+    <!--<mvc:resources location="/static/js/" mapping="/js/**"/>-->
+    <!--<mvc:resources location="/static/css/" mapping="/css/**"/>-->
+    <mvc:default-servlet-handler/>
+
+
+    <!-- 配置视图解析器: 把 controller 方法返回值解析为实际的物理视图 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="suffix" value="/WEB-INF/jsp/"/>
+        <property name="prefix" value=".jsp"/>
+    </bean>
+
+<!--    &lt;!&ndash;加载tiles框架&ndash;&gt;-->
+<!--    <bean id="tilesViewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver" p:order="1"/>-->
+<!--    <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">-->
+<!--        <property name="definitions">-->
+<!--            <list>-->
+<!--                <value>classpath:tiles.xml</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash;设置拦截器，拦截登陆后页面&ndash;&gt;-->
+<!--    <mvc:interceptors>-->
+<!--        &lt;!&ndash; 使用bean定义一个Interceptor，直接定义在mvc:interceptors根下面的Interceptor将拦截所有的请求 &ndash;&gt;-->
+<!--        &lt;!&ndash;<bean class="Interceptor.CookieInterceptor"/>&ndash;&gt;-->
+<!--        <mvc:interceptor>-->
+<!--            <mvc:mapping path="/u/*"/>-->
+<!--            &lt;!&ndash; 定义在mvc:interceptor下面的表示是对特定的请求才进行拦截的 &ndash;&gt;-->
+<!--            <bean class="com.jnshu.serviceimpl.LoginInterceptor"/>-->
+<!--        </mvc:interceptor>-->
+<!--    </mvc:interceptors>-->
+
+
+
+<!--    &lt;!&ndash;文件上传解析&ndash;&gt;-->
+<!--    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
+<!--        &lt;!&ndash; 设定默认编码 &ndash;&gt;-->
+<!--        <property name="defaultEncoding" value="UTF-8" />-->
+<!--        &lt;!&ndash; 设定文件上传的最大值5MB，5*1024*1024 &ndash;&gt;-->
+<!--        <property name="maxUploadSize" value="6291456" />-->
+<!--        <property name="maxInMemorySize" value="4096" />-->
+<!--    </bean>-->
+
+</beans>

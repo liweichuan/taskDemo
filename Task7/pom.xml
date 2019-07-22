@@ -252,7 +252,7 @@
               </includes>
           </resource>
           <resource>
-              <directory>src/main/resource</directory>
+              <directory>src/main/resources</directory>
               <includes>
                   <include>**/*.properties</include>
                   <include>**/*.xml</include>
