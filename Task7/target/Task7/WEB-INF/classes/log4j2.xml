@@ -35,7 +35,7 @@
     <logger name="org.springframework" level="Error"/>
     <logger name="org.mybatis" level="Error"/>
     <logger name="org.eclipse.jetty" level="Error"/>
-    <logger name="org.apache.tomcat" level="Error"/>
+    <logger name="org.apache.catalina" level="Error"/>
        <root level="Error">
            <appender-ref ref="Console"/>
            <appender-ref ref="logs"/>

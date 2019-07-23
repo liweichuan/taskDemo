@@ -9,6 +9,7 @@ public class Student {
     private Long id;
     private String name;
     private Long qq;
+    private String type;
     private Long start_time;
     private String graduation;
     private Long student_id;
@@ -48,6 +49,14 @@ public class Student {
 
     public Long getStart_time() {
         return start_time;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public void setStart_time(Long start_time) {

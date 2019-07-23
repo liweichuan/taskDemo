@@ -5,9 +5,10 @@
 <mapper namespace="com.jnshu.dao.StudentDao">
 
 <insert id="addStudent" parameterType="Student">
-        insert into student(name ,qq,start_time,graduation,student_id,link,wish,senior,status,create_by,update_by,create_time,update_time)
+        insert into student(name,qq,type,start_time,graduation,student_id,link,wish,senior,status,create_by,update_by,create_time,update_time)
         values (#{name},
                 #{qq},
+                #{type},
                 #{start_time},
                 #{graduation},
                 #{student_id},
@@ -33,6 +34,9 @@
             </if>
             <if test="qq != null">
                 qq=#{qq},
+            </if>
+            <if test="type != null and type !=''">
+                type=#{type},
             </if>
             <if test="start_time != null">
                 start_time=#{start_time},
@@ -72,7 +76,7 @@
 </update>
 
 <select id="findStudentByName" parameterType="java.lang.String" resultType="Student">
-      select id,qq,start_time,graduation,student_id,link,wish,senior,status,create_by,update_by,create_time,update_time from student where name=#{name}
+      select * from student where name=#{name}
 </select>
 
 <select id="findStudentById" parameterType="Long" resultType="Student">

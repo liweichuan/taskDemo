@@ -1,5 +1,7 @@
 package com.jnshu.controller;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.jnshu.entity.Student;
 import com.jnshu.service.StudentService;
 import org.apache.logging.log4j.LogManager;
@@ -10,6 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Collections;
 import java.util.List;
@@ -29,7 +32,7 @@ public class StudentController {
 
     /**返回值跳转到学生添加界面
      * */
-    @RequestMapping(value = "/student",method = RequestMethod.GET)
+    @RequestMapping(value = "/student/a",method = RequestMethod.GET)
     public String toAddStudent(){
         return "addStudent";
     }
@@ -46,7 +49,7 @@ public class StudentController {
     }
     /**更新学生数据
      * */
-    @RequestMapping(value = "/student/{student_id}",method = RequestMethod.GET)
+    @RequestMapping(value = "/student/u/{student_id}",method = RequestMethod.GET)
     public String toUpdateStudent(Model model,@PathVariable Long student_id){
         model.addAttribute("student",studentService.findStudentById(student_id));
         return "editStudent";
@@ -54,12 +57,12 @@ public class StudentController {
     /**
      * 更新学生数据
      */
-    @RequestMapping(value = "/student",method = RequestMethod.PUT)
+    @RequestMapping(value = "/student/u",method = RequestMethod.PUT)
     public String updateStudent(Model model,Student student){
         if (studentService.updateStudentById(student)){
             student=studentService.findStudentByName(student.getName());
             model.addAttribute("student",student);
-            return "redirect:/findAllStudent";
+            return "redirect:/student/list";
         }else {
             return "error";
         }
@@ -74,12 +77,12 @@ public class StudentController {
         }else {
             return "error";
         }
-        return "redirect:/findAllStudent";
+        return "redirect:/student/list";
     }
 
     /**查询单个学生
      * */
-    @RequestMapping(value = "/student/{name}",method = RequestMethod.GET)
+    @RequestMapping(value = "/student/s",method = RequestMethod.GET)
     public String findStudent(Model model, String name){
         if (name!=null && name!=""){
             if (studentService.findStudentByName(name)!=null){
@@ -101,11 +104,18 @@ public class StudentController {
     /**查询学生所有数据
      * */
     @RequestMapping(value = "/student/list",method = RequestMethod.GET)
-    public String findAllStudent(Model model){
-        List<Student> students=studentService.findAll();
-        model.addAttribute("studentList",students);
+    public String findAllStudent(Model model, @RequestParam(defaultValue = "1",required = true,value = "pageNo")Integer pageNo){
+        ///引入分页查询，使用PageHelper分页功能,在查询之前传入当前页，然后显示多少记录
+        Integer pageSize=5;//每页显示记录数为5
+        PageHelper.startPage(pageNo,pageSize);//获取第一页，5条 内容
+        List<Student> studentList=studentService.findAll();
+        //获取所有用户信息
+        PageInfo<Student> pageInfo=new PageInfo(studentList);
+        //将获取的对象结果进行封装 只需要将pageInfo交给页面就可以
+        model.addAttribute("pageInfo",pageInfo);
         return "findAllStudent";
     }
+
 /**
  （1）请求处理类必须在 IOC 容器中
  （2）@RequestMapping 用来映射请求，其中 value 属性指定映射的 url。可以作用类上，相当于 namespace 的作用。

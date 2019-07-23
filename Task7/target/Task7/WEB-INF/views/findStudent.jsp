@@ -23,9 +23,11 @@
         <th>日报链接</th>
         <th>愿望</th>
         <th>师兄</th>
-        <th>方式</th>
-        <th>表格创建时间</th>
-        <th>表格更新时间</th>
+        <th>状态</th>
+        <th>数据创建人</th>
+        <th>数据更新人</th>
+        <th>数据创建时间</th>
+        <th>数据更新时间</th>
     </tr>
     <c:forEach items="${student}" var="student" >
         <tr>
@@ -33,16 +35,18 @@
             <td>${student.qq}</td>
             <td>${student.type}</td>
             <td>${student.start_time}</td>
-            <td>${student.school}</td>
+            <td>${student.graduation}</td>
             <td>${student.student_id}</td>
             <td>${student.link}</td>
             <td>${student.wish}</td>
-            <td>${student.bro}</td>
-            <td>${student.way}</td>
+            <td>${student.senior}</td>
+            <td>${student.status}</td>
+            <td>${student.create_by}</td>
+            <td>${student.update_by}</td>
             <td>${student.create_time}</td>
             <td>${student.update_time}</td>
-            <td><a href="${pageContext.request.contextPath}/toUpdateStudent/${student.name}">编辑</a></td>
-            <td><form action="${pageContext.request.contextPath}/deleteStudent/${student.name}" method="post">
+            <td><a href="${pageContext.request.contextPath}/student/u/${student.student_id}">编辑</a></td>
+            <td><form action="${pageContext.request.contextPath}/student/${student.name}" method="post">
                 <input type="hidden" name="_method" value="DELETE">
                 <input TYPE="submit" value="删除"></form>
             </td>

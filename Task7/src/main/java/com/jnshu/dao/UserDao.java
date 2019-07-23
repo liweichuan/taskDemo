@@ -22,4 +22,6 @@ public interface UserDao {
     User findById(Long id);
     //查找所有
     List<User> findAll();
+    //这个方法是进行登录的时候模糊查询，可以通过用户名，手机号和邮箱来查找
+    User findUserByLoginName(String loginname);
 }

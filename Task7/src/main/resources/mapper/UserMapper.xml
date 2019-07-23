@@ -30,7 +30,7 @@
             <if test="email != null and email !=''">
                 email=#{email},
             </if>
-            <if test="phone != null ">
+            <if test="phone != null and phone !=''">
                 phone=#{phone},
             </if>
             <if test="picture != null and picture != ''">
@@ -66,6 +66,10 @@
 
     <select id="findUserByName" parameterType="String" resultType="User">
         select * from user where username=#{username}
+    </select>
+
+    <select id="findUserByLoginName" parameterType="String" resultType="User">
+        select * from user where username=#{loginname} or phone=#{loginname} or email=#{loginname}
     </select>
 
     <select id="findAll" resultType="User">

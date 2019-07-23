@@ -13,6 +13,10 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+/**
+ * 阿里短信验证码发送工具类
+ */
+
 /*
 pom.xml
 <dependency>
@@ -30,7 +34,7 @@ public class AliSmsUtil {
 
     final String domain="dysmsapi.aliyuncs.com";//短信API产品域名（接口地址固定，无需修改）
 
-    public void sendMesg(int phone,int message) throws ClientException,ServerException {
+    public void sendMesg(String phone,int message) throws ClientException,ServerException {
         System.setProperty("sun.net.client.defaultConnectTimeout", aliSmsBean.getConnectTimeout());
         System.setProperty("sun.net.client.defaultReadTimeout", aliSmsBean.getReadTimeout());
 
@@ -45,7 +49,7 @@ public class AliSmsUtil {
         request.setAction("SendSms");
         request.putQueryParameter("RegionId", "cn-hangzhou");
         //必填:待发送手机号
-        request.putQueryParameter("PhoneNumbers", String.valueOf(phone));
+        request.putQueryParameter("PhoneNumbers", phone);
         //必填:短信签名-可在短信控制台中找到
         request.putQueryParameter("SignName",aliSmsBean.getSignName());
         //必填:短信模板-可在短信控制台中找到
