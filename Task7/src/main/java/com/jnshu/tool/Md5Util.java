@@ -1,9 +1,12 @@
 package com.jnshu.tool;
 
+import org.springframework.stereotype.Component;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Random;
 
+@Component
 public class Md5Util {
 
     /**

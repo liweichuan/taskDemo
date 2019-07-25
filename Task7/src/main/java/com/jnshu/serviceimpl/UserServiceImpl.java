@@ -4,6 +4,7 @@ import com.jnshu.dao.UserDao;
 import com.jnshu.entity.Result;
 import com.jnshu.entity.User;
 import com.jnshu.service.UserService;
+import com.jnshu.tool.IntegerCastUtil;
 import com.jnshu.tool.Md5Util;
 import com.jnshu.tool.MessageUtil;
 import com.jnshu.tool.RedisUtil;
@@ -28,7 +29,8 @@ public class UserServiceImpl implements UserService {
     @Autowired
     MessageUtil messageUtil;
 
-
+    @Autowired
+    IntegerCastUtil integerCastUtil;
 
 
     //这是返回的result的message
@@ -36,15 +38,17 @@ public class UserServiceImpl implements UserService {
     //注册，注册会生成一个token
     @Override
     public Long register(User user) {
-        //从redis里面取出来验证码，key是用户名+手机号
-        int message= (int) redisUtil.get(user.getUsername()+user.getPhone());
+        //从redis里面取出来验证码，key是手机号
+        logger.error(redisUtil.get(user.getPhone()));//这里判断有没有取出缓存
+        String message= (String) redisUtil.get(user.getPhone());
+        logger.error(message);
         //先确定用户名不为空，不是已经存在
         if (user.getUsername()!=null&&user.getUsername()!=""&&userDao.findUserByName(user.getUsername())==null){
             if (user.getPassword()!=null&&user.getPassword()!=""){
                 if (String.valueOf(user.getMessage()).length()==6){
                     //验证码格式正确的情况下就是检查对不对
                     //发送注册码的时候，会把之前填写的信息，用户名和密码一起返回
-                    if (user.getMessage()==message){
+                    if (user.getMessage().equals(message)){
                     //是一样的情况下，就会注册成功
                     //对用户的密码进行md5加盐之后储存在数据库中
                         String passWord = Md5Util.generate(user.getPassword());//对密码进行加密加盐
@@ -76,8 +80,11 @@ public class UserServiceImpl implements UserService {
 
     //登录，可以实现用户名，手机号，邮箱登录
     @Override
-    public Result checkLogin(String loginName, String passWord) {
+    public Result checkLogin(String loginName, String password) {
+        logger.error(loginName);//这里是空
+        logger.error(password);//这个传过来了
         User user = userDao.findUserByLoginName(loginName);
+        logger.error(user);
         //先把user对象根据findUserByLoginName找一下，看有没有，这里登录名可以是用户名，手机号，邮箱，这里入参不好写
         //有两种思路，1.可以把这个查询分为三个查询，只要有一个查询的返回值不为null就可以进行登录的验证
         //2.可以把自己的手机字段修改为字符型，我使用第二种
@@ -89,12 +96,12 @@ public class UserServiceImpl implements UserService {
             result.setMessage("用户名错误");
             result.setData(null);
             return result;
-        }else if (!Md5Util.verify(passWord,user.getPassword())){
+        }else if (!Md5Util.verify(password,user.getPassword())){
             result.setCode("401");
             result.setMessage("密码错误");
             result.setData(null);
             return result;
-        }else if (Md5Util.verify(passWord,user.getPassword())){
+        }else if (Md5Util.verify(password,user.getPassword())){
             result.setCode("200");
             result.setMessage("正确");
             result.setData(user);

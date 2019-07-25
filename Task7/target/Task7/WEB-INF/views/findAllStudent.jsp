@@ -67,7 +67,7 @@
 </header>
 
 
-<main style="font-size: 15px">
+<body style="font-size: 10px">
 <%--添加用户直接访问toadd方法--%>
 <h2><a href="${pageContext.request.contextPath}/student/a" >添加用户</a> </h2>
 <%--${pageContext.request.contextPath}是绝对路径--%>
@@ -110,7 +110,7 @@
             <td>${student.update_by}</td>
             <td>${student.create_time}</td>
             <td>${student.update_time}</td>
-            <td><a href="${pageContext.request.contextPath}/student/u/${student.name}">编辑</a></td>
+            <td><a href="${pageContext.request.contextPath}/student/u/${student.student_id}">编辑</a></td>
             <td><form action="${pageContext.request.contextPath}/student/${student.name}" method="post">
                 <input type="hidden" name="_method" value="DELETE">
                 <input TYPE="submit" value="删除"></form>
@@ -121,17 +121,17 @@
 </table>
 <center>
     <p>当前 ${pageInfo.pageNum}页,总${pageInfo.pages}
-        页,总 ${pageInfo.total}条记录</main></p>
-    <a href="/student/list?pageNo=${pageInfo.firstPage}">首页</a>
+        页,总 ${pageInfo.total}条记录</p>
+    <a href="/findAllStudent?pageNo=${pageInfo.firstPage}">首页</a>
     <c:if test="${pageInfo.hasPreviousPage}">
-        <a href="/student/list?pageNo=${pageInfo.pageNum-1}">上一页</a>
+        <a href="/findAllStudent?pageNo=${pageInfo.pageNum-1}">上一页</a>
     </c:if>
     <c:if test="${pageInfo.hasNextPage }">
-        <a href="/student/list?pageNo=${pageInfo.pageNum+1}">下一页</a>
+        <a href="/findAllStudent?pageNo=${pageInfo.pageNum+1}">下一页</a>
     </c:if>
-    <a href="/student/list?pageNo=${pageInfo.lastPage}">最后页</a>
+    <a href="/findAllStudent?pageNo=${pageInfo.lastPage}">最后页</a>
 </center>
-</main>
+</body>
 
 <footer class="">
     <div class="footer-tp pd15">

@@ -64,7 +64,7 @@
 
 
 <center>
-    <div class="container-fluid">
+    <div class="container-fluid" style="font-size: 10px">
         <div class="row cb-slideshow-text-container ">
             <div class="tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
                 <header class="mb-5"><h1 style="color:red">登录</h1></header>

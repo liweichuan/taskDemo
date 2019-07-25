@@ -5,6 +5,7 @@ import com.jnshu.entity.Result;
 import com.jnshu.entity.User;
 import com.jnshu.service.UserService;
 import com.jnshu.tool.DesUtil;
+import com.jnshu.tool.IntegerCastUtil;
 import com.jnshu.tool.MessageUtil;
 import com.jnshu.tool.RedisUtil;
 import com.jnshu.tool.aliSmsUtil.AliSmsUtil;
@@ -17,6 +18,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -35,6 +37,8 @@ public class UserController {
     AliSmsUtil aliSmsUtil;
     @Autowired
     RedisUtil redisUtil;
+    @Autowired
+    IntegerCastUtil integerCastUtil;
 
     //这是get方法返回注册页面请求
     @RequestMapping(value = "/user/register/0",method = RequestMethod.GET)
@@ -45,49 +49,61 @@ public class UserController {
     //所以这里采用缓存存验证码，key是用户名 value是有两种 1.email:1946931904@qq.com;123456
     //2.phone:13699670397;123456   之后在注册的时候进行比对，从缓存中取数据，注册成功了就存在数据库
    //这里有更简单的方式，把整个user存进缓存
+
     @RequestMapping(value = "/user/message",method = RequestMethod.POST)
-    public void sendMessage(User user) throws ClientException {
+    @ResponseBody
+    public Boolean sendMessage(String phone) throws ClientException {
         //调用工具类生成验证码
-        int message=messageUtil.getMesgCode();
-        //将验证码存储在redis，这里只取你注册的方式和用户名（从页面传来），及验证码
-        boolean result=redisUtil.set(user.getUsername()+user.getPhone(),message,60);
+        String message=messageUtil.getMesgCode();
+        logger.error(message);
+        logger.error(phone);
+        //将验证码存储在redis，及验证码
+        boolean result=redisUtil.set(phone,message);
         logger.error(result==true?"将验证码存入缓存成功":"将验证码存入缓存失败");
-        aliSmsUtil.sendMesg(user.getPhone(),message);
+        try {
+            aliSmsUtil.sendMesg(phone,message);
+            return true;
+        } catch (ClientException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     //post新增用户请求
     @RequestMapping(value = "/user/register",method = RequestMethod.POST)
     public String register(@ModelAttribute User user, Model model){
+        logger.error(user);
         Result result=new Result();
-        if (userService.register(user)==0) {
+        Long num = userService.register(user);
+        if (num==0) {
             //返回0说明是用户名注册时输入为空,或已经存在
             result.setCode("401");
             result.setMessage("用户名已存在,或用户名为空");
             result.setData(null);
             model.addAttribute("result1",result);
             return "message";                  //为空
-        }else if (userService.register(user)==1){
+        }else if (num==1){
             //返回值为1说明密码为空
             result.setCode("402");
             result.setMessage("注册失败，密码不能为空");
             result.setData(null);
             model.addAttribute("result1",result);
             return "message";
-        }else if (userService.register(user)==2){
+        }else if (num==2){
             //返回值为2说明验证码格式不对，长度不为6
             result.setCode("403");
             result.setMessage("注册失败，验证码格式错误");
             result.setData(null);
             model.addAttribute("result1",result);
             return "message";
-        }else if (userService.register(user)==3){
+        }else if (num==3){
             //返回值为3说明验证码错误
             result.setCode("403");
             result.setMessage("注册失败，验证码输入错误");
             result.setData(null);
             model.addAttribute("result1",result);
             return "message";
-        }else if (userService.register(user)==4){
+        }else if (num==4){
             //返回值为4说明注册成功
             logger.info("注册成功，返回登录界面");
             return "registerSuccess";
@@ -105,6 +121,7 @@ public class UserController {
     @RequestMapping(value = "/user/login",method = RequestMethod.POST)
     public String checkLogin(Model model, @Param("loginname")String loginname, @Param("password")String password,
                              HttpServletRequest request, HttpServletResponse response){
+        logger.error(loginname);//没有传进来
         Result result =userService.checkLogin(loginname,password);
         User user= (User) result.getData();
         if (user!=null){

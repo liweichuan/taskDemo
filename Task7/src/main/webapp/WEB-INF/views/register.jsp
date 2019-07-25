@@ -5,12 +5,12 @@
          isELIgnored="false" %>
 <!DOCTYPE html>
 <html lang="en">
-<title>登录成功页面</title>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>task14-1</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/task14.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/task14-chen.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/reset.css">
@@ -69,7 +69,7 @@
                 <header class="mb-5"><h1>注册界面</h1></header>
 
 
-                <form action="${pageContext.request.contextPath}/user/register" method="post" class="subscribe-form">
+                <form id="form" action="${pageContext.request.contextPath}/user/register" method="post" class="subscribe-form">
                     <div class="row form-section">
                         <table>
                             <tr>
@@ -82,26 +82,33 @@
                             <tr>
                                 <td>密码：</td>
                                 <td><label>
-                                    <input type="password" name="password" />
+                                    <input type="text" name="password" />
                                 </label>
                                 </td>
                             </tr>
+<%--                            <tr>--%>
+<%--                                <td>再次输入密码：</td>--%>
+<%--                                <td><label>--%>
+<%--                                    <input type="text" name="password" />--%>
+<%--                                </label>--%>
+<%--                                </td>--%>
+<%--                            </tr>--%>
                             <tr>
-                                <td>再次输入密码：</td>
+                                <td>手机号：</td>
                                 <td><label>
-                                    <input type="password" name="password" />
+                                    <input id="phone" type="text" name="phone" />
                                 </label>
                                 </td>
                             </tr>
                             <tr>
                                 <td>验证码：</td>
                                 <td><label>
-                                    <input type="text" name="message" />
+                                    <input id="Code" type="text" name="message" />
                                 </label>
                                 </td>
                                 <td>
                                     <div align="center">
-                                        <input type="submit" value="验证码" href="${pageContext.request.contextPath}/user/message" style="color:#BC8F8F">
+                                        <input id="getCode" type="button" onclick="sendCode(this)" value="发送验证码"  style="color:#BC8F8F">
                                     </div>
                                 </td>
                             </tr>
@@ -121,6 +128,61 @@
         </div>
     </div>
 </center>
+
+<script type="text/javascript">
+    //点击按钮后，时间为60秒，自动倒计时
+    var clock = "";
+    var nums = 60;
+    var btn;
+    function doLoop() {
+        nums--;
+        if (nums > 0) {
+            btn.value = "重新获取（"+nums+"）";
+        } else {
+            clearInterval(clock); //清除js定时器
+            btn.disabled = false;
+            btn.value = "点击发送验证码";
+            nums = 60; //重置时间
+        }
+    }
+    //发送手机验证码
+    function sendCode(thisBtn) {
+        console.log(thisBtn);
+        //$('#phoneNumber')找到元素id为phoneNumber的元素，val获取值
+        // var  phoneNumber=document.getElementById("phone").value;
+        var  phoneNumber=$('#phone').val();
+        //验证手机号，正则表达式,^[1]的意思是以1开头,[3,5,7,8,9]的意思是，1后面紧跟一个3.5.7.8.9数字
+        var pattern=/^1[3,5,7,8,9]\d{9}$/;
+        //匹配结果,match() 方法可在字符串内检索指定的值，或找到一个或多个正则表达式的匹配。
+        // 这里看手机号符不符合格式
+        var bo=phoneNumber.match(pattern);
+        if(bo){
+            $.ajax({
+                //ajax发送请求信息
+                // url: "/user/message",
+                url: "http://localhost:8080/user/message",
+                /* data:{"tb_phoneNum":tb_phoneNum},*/
+                //这里传数据
+                data:{"phone":phoneNumber},
+                type: "POST",
+                success() {
+                    alert("短信发送成功")
+                }
+            });
+            btn = thisBtn;
+            btn.disabled = true; //将按钮置为不可点击
+            btn.value = "重新获取("+nums+")";
+            //计时器
+            clock = setInterval(doLoop, 1000); //一秒执行一次
+        }else {
+            //注册时输入的电话号码不符合正则表达式
+            alert("您的电话号码有误，请重新输入！")
+        }
+    }
+</script>
+
+
+
 
 
 <footer class="">

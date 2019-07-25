@@ -24,7 +24,7 @@
     更新人：<input type="text" name="update_by" value="${student.update_by}"><br>
     创建时间：<input type="text" name="create_time" value="${student.create_time}"><br>
     更新时间：<input type="text" name="update_time" value="${student.update_time}"><br>
-    <input type="submit" value="编辑"/>
+    <input type="submit" value="提交"/>
 </form>
 </body>
 </html>

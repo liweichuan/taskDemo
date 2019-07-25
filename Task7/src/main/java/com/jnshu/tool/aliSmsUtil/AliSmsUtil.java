@@ -34,7 +34,7 @@ public class AliSmsUtil {
 
     final String domain="dysmsapi.aliyuncs.com";//短信API产品域名（接口地址固定，无需修改）
 
-    public void sendMesg(String phone,int message) throws ClientException,ServerException {
+    public void sendMesg(String phone,String message) throws ClientException,ServerException {
         System.setProperty("sun.net.client.defaultConnectTimeout", aliSmsBean.getConnectTimeout());
         System.setProperty("sun.net.client.defaultReadTimeout", aliSmsBean.getReadTimeout());
 

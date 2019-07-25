@@ -66,7 +66,7 @@
     <h1>注册成功，请登录</h1>
     <img src="${pageContext.request.contextPath}/static/image/1231.png" width="640" height="512" />
 </center>
-<div align="center">
+<div align="center" style="font-size: 10px">
     <a href="${pageContext.request.contextPath}/user/login/0" style="color:red"><h2>登录界面</h2></a>
 </div>
 

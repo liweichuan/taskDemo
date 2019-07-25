@@ -11,9 +11,9 @@ public interface StudentService {
     //增加
     Long addStudent(Student student);
     //删除
-    boolean deleteStudentByName(String name);
+    Boolean deleteStudentByName(String name);
     //更新
-    boolean updateStudentById(Student student);
+    Boolean updateStudentById(Student student);
     //靠name查询
     Student findStudentByName(String name);
     //靠id查询

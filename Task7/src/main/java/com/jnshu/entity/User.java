@@ -2,18 +2,20 @@ package com.jnshu.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**这是注册信息
  * */
 
 @Data
-public class User {
+public class User implements Serializable {
     private Long id;
     private String username;
     private String password;
     private String email;
     private String phone;
     private String picture;
-    private int message;
+    private String message;
     private int type;
     private String create_by;
     private String update_by;
@@ -69,11 +71,11 @@ public class User {
         this.picture = picture;
     }
 
-    public int getMessage() {
+    public String getMessage() {
         return message;
     }
 
-    public void setMessage(int message) {
+    public void setMessage(String message) {
         this.message = message;
     }
 

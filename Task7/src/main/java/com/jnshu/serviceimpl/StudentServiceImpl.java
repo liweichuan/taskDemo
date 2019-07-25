@@ -30,14 +30,14 @@ public class StudentServiceImpl implements StudentService {
 
     //删除
     @Override
-    public boolean deleteStudentByName(String name) {
+    public Boolean deleteStudentByName(String name) {
         Logger.error(name);
         return studentDao.deleteStudentByName(name);
     }
 
     //更新
     @Override
-    public boolean updateStudentById(Student student) {
+    public Boolean updateStudentById(Student student) {
         Logger.error(student);
         return studentDao.updateStudentById(student);
     }

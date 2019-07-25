@@ -4,9 +4,8 @@
 
 <mapper namespace="com.jnshu.dao.UserDao">
     <insert id="addUser" parameterType="User">
-        insert into user(id,username,password,email,phone,picture,message,type,create_by,update_by,create_time,update_time)
-           values (#{id},
-                   #{username},
+        insert into user(username,password,email,phone,picture,message,type,create_by,update_by,create_time,update_time)
+           values (#{username},
                    #{password},
                    #{email},
                    #{phone},
@@ -36,7 +35,7 @@
             <if test="picture != null and picture != ''">
                 picture=#{picture},
             </if>
-            <if test="message != null">
+            <if test="message != null and message !=''">
                 message=#{message},
             </if>
             <if test="type != null">

@@ -23,7 +23,7 @@
 </insert>
 
 <delete id="deleteStudentByName" parameterType="java.lang.String" >
-        delete * from student where name=#{name}
+        delete from student where name=#{name}
 </delete>
 
 <update id="updateStudentById" parameterType="Student" >

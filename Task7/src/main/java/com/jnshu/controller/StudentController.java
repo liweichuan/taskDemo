@@ -57,10 +57,12 @@ public class StudentController {
     /**
      * 更新学生数据
      */
-    @RequestMapping(value = "/student/u",method = RequestMethod.PUT)
+    @RequestMapping(value = "/student/u",method = RequestMethod.POST)
     public String updateStudent(Model model,Student student){
+        logger.error(student);
         if (studentService.updateStudentById(student)){
             student=studentService.findStudentByName(student.getName());
+            logger.error(student);
             model.addAttribute("student",student);
             return "redirect:/student/list";
         }else {
