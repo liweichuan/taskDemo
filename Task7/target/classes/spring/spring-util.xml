@@ -101,13 +101,13 @@
 <!--    </bean>-->
 
     <!--阿里邮箱推送-->
-<!--    <context:property-placeholder location="classpath:properties/aliEmail.properties" ignore-unresolvable="true"/>-->
-<!--    <bean name="aliEmailBean" class="util.aliEmailUtil.AliEmailBean">-->
-<!--        <property name="accessKeyId" value="${email.acceKeyId}"/>-->
-<!--        <property name="accessKeySecret" value="${email.accessKeySecret}"/>-->
-<!--        <property name="accountName" value="${email.accountName}"/>-->
-<!--        <property name="fromAlias" value="${email.fromAlias}"/>-->
-<!--        <property name="subject" value="${email.subject}"/>-->
-<!--        <property name="tagName" value="${email.tagName}"/>-->
-<!--    </bean>-->
+    <context:property-placeholder location="classpath:properties/aliMail.properties" ignore-unresolvable="true"/>
+    <bean name="aliMailBean" class="com.jnshu.tool.aliMailUtil.AliMailBean">
+        <property name="accessKeyId" value="${email.acceKeyId}"/>
+        <property name="accessKeySecret" value="${email.accessKeySecret}"/>
+        <property name="accountName" value="${email.accountName}"/>
+        <property name="fromAlias" value="${email.fromAlias}"/>
+        <property name="subject" value="${email.subject}"/>
+        <property name="tagName" value="${email.tagName}"/>
+    </bean>
 </beans>

@@ -8,6 +8,7 @@ import com.jnshu.tool.DesUtil;
 import com.jnshu.tool.IntegerCastUtil;
 import com.jnshu.tool.MessageUtil;
 import com.jnshu.tool.RedisUtil;
+import com.jnshu.tool.aliMailUtil.AliMailUtil;
 import com.jnshu.tool.aliSmsUtil.AliSmsUtil;
 import org.apache.ibatis.annotations.Param;
 import org.apache.logging.log4j.LogManager;
@@ -39,10 +40,13 @@ public class UserController {
     RedisUtil redisUtil;
     @Autowired
     IntegerCastUtil integerCastUtil;
+    @Autowired
+    AliMailUtil aliMailUtil;
 
-    //这是get方法返回注册页面请求
+    //这是get方法返回注册页面请求 默认手机号验证码注册
     @RequestMapping(value = "/user/register/0",method = RequestMethod.GET)
     public String register(){
+        //user.type=0
         return "register";
     }
     //注册按钮点击之前会点击一下发送验证码的按钮,不会返回视图  这里获取验证码不能添加到数据库，不然就相当于注册了
@@ -52,22 +56,38 @@ public class UserController {
 
     @RequestMapping(value = "/user/message",method = RequestMethod.POST)
     @ResponseBody
-    public Boolean sendMessage(String phone) throws ClientException {
+    public void sendMessage(String phone) throws ClientException {
         //调用工具类生成验证码
         String message=messageUtil.getMesgCode();
         logger.error(message);
         logger.error(phone);
-        //将验证码存储在redis，及验证码
+        //将验证码存储在redis
         boolean result=redisUtil.set(phone,message);
         logger.error(result==true?"将验证码存入缓存成功":"将验证码存入缓存失败");
-        try {
-            aliSmsUtil.sendMesg(phone,message);
-            return true;
-        } catch (ClientException e) {
-            e.printStackTrace();
-        }
-        return false;
+        aliSmsUtil.sendMesg(phone,message);
     }
+
+    //使用get请求返回邮箱验证码注册页面
+    @RequestMapping(value = "/user/register/1",method = RequestMethod.GET)
+    public String emailRegister(){
+        //user.type=1
+        return "emailRegister";
+    }
+
+    //发送邮件验证码
+    @RequestMapping(value = "/user/email",method = RequestMethod.POST)
+    @ResponseBody
+    public void sendEmail(String email) throws ClientException {
+        //调用工具类生成验证码
+        String message=messageUtil.getMesgCode();
+        logger.error(message);
+        logger.error(email);
+        //将验证码存储在redis
+        boolean result=redisUtil.set(email,message);
+        logger.error(result==true?"将验证码存入缓存成功":"将验证码存入缓存失败");
+        aliMailUtil.sendMail(email,message);
+    }
+
 
     //post新增用户请求
     @RequestMapping(value = "/user/register",method = RequestMethod.POST)
