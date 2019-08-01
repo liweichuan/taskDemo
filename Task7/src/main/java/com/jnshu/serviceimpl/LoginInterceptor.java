@@ -29,11 +29,11 @@ public class LoginInterceptor implements HandlerInterceptor {//登录拦截器�
     private  static final Logger logger= LogManager.getLogger(LoginInterceptor.class);
     @Override
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
-//       logger.info("拦截器被调用");
+        logger.error("拦截器被调用");
         //判断请求中是否携带了token令牌，同时对token令牌进行验证。
         Cookie[] cookies=httpServletRequest.getCookies();//返回一系列的数组，其中包含随客户端随此请求发送的所有cookie对象，如果没有就返回null
         if(cookies!=null&&cookies.length>0){//判断cookies数组不为空，其中至少有一个cookie
-            logger.info("开始遍历cookie");
+            logger.error("开始遍历cookie");
             for (Cookie cookie: cookies) {//开始遍历cookies
                 //判断cookie是否存储了token
                 if("token".equals(cookie.getName())){//判断是否有cookie的名称为“token”
@@ -57,8 +57,10 @@ public class LoginInterceptor implements HandlerInterceptor {//登录拦截器�
 //                         return true;
 //                     }
                     else {//根据id查找的结果为空，那么
-                        logger.debug("验证失败，重新返回到登录界面");
-                        String uri=httpServletRequest.getContextPath()+"/login/0";//重定向到登录界面并把这个值给uri
+                        logger.error(id);
+                        logger.error(userService.findById(id));
+                        logger.error("验证失败，重新返回到登录界面");
+                        String uri=httpServletRequest.getContextPath()+"/user/login/0";//重定向到登录界面并把这个值给uri
                         httpServletRequest.getRequestDispatcher(uri).forward(httpServletRequest,httpServletResponse);
                         return false;  //返回false
                     }
@@ -66,8 +68,8 @@ public class LoginInterceptor implements HandlerInterceptor {//登录拦截器�
                 }
             }
         }
-        logger.debug("cookies不存在");
-        httpServletRequest.getRequestDispatcher("/login/0").forward(httpServletRequest,httpServletResponse);
+        logger.error("cookies不存在");
+        httpServletRequest.getRequestDispatcher("/user/login/0").forward(httpServletRequest,httpServletResponse);
         return false;
     }
 

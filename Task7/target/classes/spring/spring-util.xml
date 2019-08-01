@@ -91,14 +91,23 @@
 
 
     <!--阿里图片存储-->
-<!--    <context:property-placeholder location="classpath:properties/oss.properties" ignore-unresolvable="true"/>-->
-<!--    <bean id="ossbean" class="util.ossUtil.OssBean">-->
-<!--        <property name="accessKeyId" value="${oss.accessKeyId}"/>-->
-<!--        <property name="accessKeySecret" value="${oss.accessKeySecret}"/>-->
-<!--        <property name="bucketName" value="${oss.bucketName}"/>-->
-<!--        <property name="contentype" value="${oss.contentype}"/>-->
-<!--        <property name="endpoint" value="${oss.endpoint}"/>-->
-<!--    </bean>-->
+    <context:property-placeholder location="classpath:properties/oss.properties" ignore-unresolvable="true"/>
+    <bean id="ossbean" class="com.jnshu.tool.aliOssUtil.OssBean">
+        <property name="accessKeyId" value="${oss.accessKeyId}"/>
+        <property name="accessKeySecret" value="${oss.accessKeySecret}"/>
+        <property name="bucketName" value="${oss.bucketName}"/>
+        <property name="contentype" value="${oss.contentype}"/>
+        <property name="endpoint" value="${oss.endpoint}"/>
+    </bean>
+
+    <!--阿里云防盗链设置-->
+    <context:property-placeholder location="classpath:properties/referer.properties" ignore-unresolvable="true"/>
+    <bean id="refererBean" class="com.jnshu.tool.aliRefererUtil.RefererBean">
+        <property name="accessKeyId" value="${oss.accessKeyId}"/>
+        <property name="accessKeySecret" value="${oss.accessKeySecret}"/>
+        <property name="bucketName" value="${oss.bucketName}"/>
+        <property name="endpoint" value="${oss.endpoint}"/>
+    </bean>
 
     <!--阿里邮箱推送-->
     <context:property-placeholder location="classpath:properties/aliMail.properties" ignore-unresolvable="true"/>

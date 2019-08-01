@@ -29,6 +29,8 @@
             <a style="margin: 10px;white-space: nowrap;display: inline-block;font-size: 15px"   class="message-color"  href="${pageContext.request.contextPath}/user/register/0">注册</a>
 
             <a  style="margin: 10px;white-space: nowrap;display: inline-block;font-size: 15px"  class="message-color"  href="${pageContext.request.contextPath}/user/loginOut">退出</a>
+            <a  style="margin: 10px;white-space: nowrap;display: inline-block;font-size: 15px"  class="message-color"  href="${pageContext.request.contextPath}/u/user">我的</a>
+
             <img src="${pageContext.request.contextPath}/static/image/task08header01.png" alt="">
             <img src="${pageContext.request.contextPath}/static/image/task08header02.png" alt="">
             <img src="${pageContext.request.contextPath}/static/image/task08header03.png" alt="">

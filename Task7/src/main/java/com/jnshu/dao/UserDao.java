@@ -24,4 +24,7 @@ public interface UserDao {
     List<User> findAll();
     //这个方法是进行登录的时候模糊查询，可以通过用户名，手机号和邮箱来查找
     User findUserByLoginName(String loginname);
+    //根据手机查询，判断注册时手机号合不合法，有没有被注册过
+    User findUserByPhone(String phone);
+
 }

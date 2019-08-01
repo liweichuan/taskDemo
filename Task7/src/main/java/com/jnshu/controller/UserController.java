@@ -92,8 +92,13 @@ public class UserController {
     //post新增用户请求
     @RequestMapping(value = "/user/register",method = RequestMethod.POST)
     public String register(@ModelAttribute User user, Model model){
-        logger.error(user);
         Result result=new Result();
+        if (user.getPhone()!=null){
+            user.setType(0);//设置验证码类型为手机
+        }else if (user.getEmail()!=null){
+            user.setType(1);//设置验证码类型为邮箱
+        }
+        logger.error(user);
         Long num = userService.register(user);
         if (num==0) {
             //返回0说明是用户名注册时输入为空,或已经存在

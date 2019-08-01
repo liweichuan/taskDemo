@@ -49,25 +49,29 @@
 <!--    </bean>-->
 
 <!--    &lt;!&ndash;设置拦截器，拦截登陆后页面&ndash;&gt;-->
-<!--    <mvc:interceptors>-->
-<!--        &lt;!&ndash; 使用bean定义一个Interceptor，直接定义在mvc:interceptors根下面的Interceptor将拦截所有的请求 &ndash;&gt;-->
-<!--        &lt;!&ndash;<bean class="Interceptor.CookieInterceptor"/>&ndash;&gt;-->
-<!--        <mvc:interceptor>-->
-<!--            <mvc:mapping path="/u/*"/>-->
-<!--            &lt;!&ndash; 定义在mvc:interceptor下面的表示是对特定的请求才进行拦截的 &ndash;&gt;-->
-<!--            <bean class="com.jnshu.serviceimpl.LoginInterceptor"/>-->
-<!--        </mvc:interceptor>-->
-<!--    </mvc:interceptors>-->
+    <mvc:interceptors>
+        <!-- 使用bean定义一个Interceptor，直接定义在mvc:interceptors根下面的Interceptor将拦截所有的请求 -->
+        <!--<bean class="Interceptor.CookieInterceptor"/>-->
+        <mvc:interceptor>
+            <mvc:mapping path="/u/*"/>
+            <!-- 定义在mvc:interceptor下面的表示是对特定的请求才进行拦截的 -->
+            <bean class="com.jnshu.serviceimpl.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 
 
-
-<!--    &lt;!&ndash;文件上传解析&ndash;&gt;-->
-<!--    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">-->
-<!--        &lt;!&ndash; 设定默认编码 &ndash;&gt;-->
-<!--        <property name="defaultEncoding" value="UTF-8" />-->
-<!--        &lt;!&ndash; 设定文件上传的最大值5MB，5*1024*1024 &ndash;&gt;-->
-<!--        <property name="maxUploadSize" value="6291456" />-->
-<!--        <property name="maxInMemorySize" value="4096" />-->
-<!--    </bean>-->
+    <!--MultipartResolver 用于处理文件上传，当收到请求时 DispatcherServlet 的 checkMultipart() 方法
+      会调用 MultipartResolver 的 isMultipart() 方法判断请求中是否包含文件。如果请求数据中包含文件，
+      则调用 MultipartResolver 的 resolveMultipart() 方法对请求的数据进行解析，然后将文件数据解析成 MultipartFile
+      并封装在 MultipartHttpServletRequest (继承了 HttpServletRequest) 对象中，最后传递给 Controller，-->
+    <!--文件上传解析-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- 设定默认编码 -->
+        <property name="defaultEncoding" value="UTF-8" />
+        <!-- 设定文件上传的最大值5MB，5*1024*1024byte -->
+        <property name="maxUploadSize" value="6291456" />
+        <!-- 设定文件上传时写入内存的最大值，如果小于这个参数不会生成临时文件，默认为10240 -->
+        <property name="maxInMemorySize" value="4096" />
+    </bean>
 
 </beans>

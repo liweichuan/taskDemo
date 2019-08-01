@@ -30,6 +30,9 @@
             <a style="margin: 10px;white-space: nowrap;display: inline-block;font-size: 15px"   class="message-color"  href="${pageContext.request.contextPath}/user/register/0">注册</a>
 
             <a  style="margin: 10px;white-space: nowrap;display: inline-block;font-size: 15px"  class="message-color"  href="${pageContext.request.contextPath}/user/loginOut">退出</a>
+
+            <a  style="margin: 10px;white-space: nowrap;display: inline-block;font-size: 15px"  class="message-color"  href="${pageContext.request.contextPath}/u/user">我的</a>
+
             <img src="${pageContext.request.contextPath}/static/image/task08header01.png" alt="">
             <img src="${pageContext.request.contextPath}/static/image/task08header02.png" alt="">
             <img src="${pageContext.request.contextPath}/static/image/task08header03.png" alt="">
@@ -66,7 +69,10 @@
     <div class="container-fluid" style="font-size: 10px">
         <div class="row cb-slideshow-text-container ">
             <div class="tm-content col-xl-6 col-sm-8 col-xs-8 ml-auto section">
-                <header class="mb-5"><h1>注册界面</h1></header>
+                <header class="mb-5"><h1>注册界面</h1>
+                    <a href="${pageContext.request.contextPath}/user/register/0">短信</a>
+                    <a href="${pageContext.request.contextPath}/user/register/1">邮件</a>
+                </header>
 
 
                 <form id="form" action="${pageContext.request.contextPath}/user/register" method="post" class="subscribe-form">
@@ -86,13 +92,13 @@
                                 </label>
                                 </td>
                             </tr>
-<%--                            <tr>--%>
-<%--                                <td>再次输入密码：</td>--%>
-<%--                                <td><label>--%>
-<%--                                    <input type="text" name="password" />--%>
-<%--                                </label>--%>
-<%--                                </td>--%>
-<%--                            </tr>--%>
+                            <tr>
+                                <td>再次输入密码：</td>
+                                <td><label>
+                                    <input type="text" name="password2" />
+                                </label>
+                                </td>
+                            </tr>
                             <tr>
                                 <td>手机号：</td>
                                 <td><label>
@@ -118,6 +124,9 @@
                                     <br>
                                     <div align="center">
                                         <input type="submit" value="注册" style="color:#BC8F8F">
+                                    </div>
+                                    <div align="center">
+                                        <input type="reset" value="重置" style="color:#BC8F8F">
                                     </div>
                                 </td>
                             </tr>

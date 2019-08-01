@@ -9,6 +9,8 @@ public interface UserService {
     //注销
     boolean logout(User user);
 
+    //更新照片
+    boolean updateUser(User user);
     //修改用户密码
     boolean changePassWord(User user);
 
@@ -17,4 +19,8 @@ public interface UserService {
     Result checkLogin(String loginName, String passWord);
 
     User findById(Long id);
+
+    User findUserByPhone(String phone);
+
+
 }

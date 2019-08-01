@@ -74,4 +74,8 @@
     <select id="findAll" resultType="User">
         select * from user
     </select>
+
+    <select id="findUserByPhone" parameterType="String" resultType="User">
+        select * from user where phone=#{phone}
+    </select>
 </mapper>

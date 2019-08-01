@@ -21,7 +21,7 @@ public class SingleSendMail {
        request.setAccountName("lianchen@lianchenyouxu.top");
        request.setAddressType(1);
        request.setReplyToAddress(true);//发送到网易邮箱没有一点问题
-       request.setToAddress("postmaster@lianchenyouxu.top");
+       request.setToAddress("1946931904@qq.com");
        request.setSubject("注册验证码");
        request.setTagName("task");
        request.setHtmlBody("您的验证码为666666");

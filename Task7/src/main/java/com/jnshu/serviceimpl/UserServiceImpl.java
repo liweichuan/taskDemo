@@ -38,17 +38,26 @@ public class UserServiceImpl implements UserService {
     //注册，注册会生成一个token
     @Override
     public Long register(User user) {
-        //从redis里面取出来验证码，key是手机号
-        logger.error(redisUtil.get(user.getPhone()));//这里判断有没有取出缓存
-        String message= (String) redisUtil.get(user.getPhone());
-        logger.error(message);
+        if (user.getType()==0){
+            //手机验证码
+            //从redis里面取出来验证码，key是手机号
+            logger.error(redisUtil.get(user.getPhone()));//这里判断有没有取出缓存
+            this.message= (String) redisUtil.get(user.getPhone());
+            logger.error(message);
+        }else if(user.getType()==1){
+            //邮箱验证码
+            //从redis里面取出来验证码，key是邮箱号
+            logger.error(redisUtil.get(user.getEmail()));//这里判断有没有取出缓存
+            this.message= (String) redisUtil.get(user.getEmail());
+            logger.error(message);
+        }
         //先确定用户名不为空，不是已经存在
         if (user.getUsername()!=null&&user.getUsername()!=""&&userDao.findUserByName(user.getUsername())==null){
             if (user.getPassword()!=null&&user.getPassword()!=""){
                 if (String.valueOf(user.getMessage()).length()==6){
                     //验证码格式正确的情况下就是检查对不对
                     //发送注册码的时候，会把之前填写的信息，用户名和密码一起返回
-                    if (user.getMessage().equals(message)){
+                    if (user.getMessage().equals(this.message)){
                     //是一样的情况下，就会注册成功
                     //对用户的密码进行md5加盐之后储存在数据库中
                         String passWord = Md5Util.generate(user.getPassword());//对密码进行加密加盐
@@ -60,6 +69,9 @@ public class UserServiceImpl implements UserService {
                         return Long.valueOf(4);
                     }else {
                         //不一样，说明验证码错误
+                        logger.error(user.getMessage());
+                        logger.error(this.message);
+                        logger.error(this.message.equals(user.getMessage()));
                         logger.error("验证码错误");
                         return Long.valueOf(3);
                     }
@@ -81,8 +93,8 @@ public class UserServiceImpl implements UserService {
     //登录，可以实现用户名，手机号，邮箱登录
     @Override
     public Result checkLogin(String loginName, String password) {
-        logger.error(loginName);//这里是空
-        logger.error(password);//这个传过来了
+        logger.error(loginName);
+        logger.error(password);
         User user = userDao.findUserByLoginName(loginName);
         logger.error(user);
         //先把user对象根据findUserByLoginName找一下，看有没有，这里登录名可以是用户名，手机号，邮箱，这里入参不好写
@@ -123,15 +135,27 @@ public class UserServiceImpl implements UserService {
         return false;
     }
 
+    @Override
+    public boolean updateUser(User user) {
+        return userDao.updateUser(user);
+    }
+
     //修改密码
     @Override
     public boolean changePassWord(User user) {
-        return false;
+        return userDao.updateUser(user);
     }
 
     //查找个人信息
     @Override
     public User findById(Long id) {
-        return null;
+        return userDao.findById(id);
+    }
+
+    //根据手机号查询，看手机号有没有被注册，是否合法
+    @Override
+    public User findUserByPhone(String phone) {
+
+        return userDao.findUserByPhone(phone);
     }
 }

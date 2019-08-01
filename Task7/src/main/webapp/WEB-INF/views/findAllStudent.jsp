@@ -6,7 +6,7 @@
          isELIgnored="false" %>
 <!DOCTYPE html>
 <html lang="en">
-<title>登录成功页面</title>
+<title></title>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
