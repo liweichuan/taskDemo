@@ -3,14 +3,10 @@ import com.aliyun.oss.OSS;
 import java.io.*;
 
 import com.aliyun.oss.OSSClientBuilder;
-import com.aliyun.oss.model.BucketInfo;
-import com.aliyun.oss.model.OSSObject;
-import com.aliyun.oss.model.OSSObjectSummary;
-import com.aliyun.oss.model.ObjectListing;
+import com.aliyun.oss.model.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
@@ -75,19 +71,9 @@ public class OssTest {
     }
     //下载
     @Test
-    public void load() throws IOException {
-        OSSObject ossObject = ossClient.getObject(bucketName,"picture/14.jpg");
-        InputStream inputStream = ossObject.getObjectContent();
-        StringBuilder objectContent = new StringBuilder();
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
-        while (true) {
-            String line = reader.readLine();
-            if (line == null)
-                break;
-            objectContent.append(line);
-        }
-        inputStream.close();
-        logger.error("Object：" + "picture/14.jpg" + "的内容是：" + objectContent);
+    public void load(String name) throws IOException {
+        GetObjectRequest request = new GetObjectRequest(bucketName, "picture/14.jpg");
+        ossClient.getObject(request, new File(name));
     }
     //删除
     @Test

@@ -130,7 +130,7 @@
       <dependency>
           <groupId>org.slf4j</groupId>
           <artifactId>slf4j-api</artifactId>
-          <version>1.7.22</version>
+          <version>1.7.21</version>
       </dependency>
 <!--log4j2和slf4j桥接依赖-->
       <dependency>
@@ -246,6 +246,13 @@
           <groupId>com.aliyun.oss</groupId>
           <artifactId>aliyun-sdk-oss</artifactId>
           <version>3.5.0</version>
+      </dependency>
+      <!--七牛云上传-->
+      <!-- https://mvnrepository.com/artifact/com.qiniu/qiniu-java-sdk -->
+      <dependency>
+          <groupId>com.qiniu</groupId>
+          <artifactId>qiniu-java-sdk</artifactId>
+          <version>[7.2.0, 7.2.99]</version>
       </dependency>
   </dependencies>
 

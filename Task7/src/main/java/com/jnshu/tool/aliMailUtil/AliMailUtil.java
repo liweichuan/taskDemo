@@ -14,12 +14,16 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+
+/**阿里邮件推送
+ * */
+
 @Component
 public class AliMailUtil {
     private static final Logger logger= LogManager.getLogger(AliMailUtil.class);
 
     @Autowired
-    private AliMailBean aliMailBean;
+    AliMailBean aliMailBean;
 
     public void sendMail(String email,String message) {
 // 如果是除杭州region外的其它region（如新加坡、澳洲Region），需要将下面的"cn-hangzhou"替换为"ap-southeast-1"、或"ap-southeast-2"。

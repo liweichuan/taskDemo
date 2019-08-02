@@ -109,6 +109,15 @@
         <property name="endpoint" value="${oss.endpoint}"/>
     </bean>
 
+    <!--阿里图片设置-->
+    <context:property-placeholder location="classpath:properties/picture.properties" ignore-unresolvable="true"/>
+    <bean id="pictureBean" class="com.jnshu.tool.aliPictureUtil.PictureBean">
+        <property name="endpoint" value="${oss.endpoint}"/>
+        <property name="accessKeyId" value="${oss.accessKeyId}"/>
+        <property name="accessKeySecret" value="${oss.accessKeySecret}"/>
+        <property name="bucketName" value="${oss.bucketName}"/>
+    </bean>
+
     <!--阿里邮箱推送-->
     <context:property-placeholder location="classpath:properties/aliMail.properties" ignore-unresolvable="true"/>
     <bean name="aliMailBean" class="com.jnshu.tool.aliMailUtil.AliMailBean">
@@ -118,5 +127,14 @@
         <property name="fromAlias" value="${email.fromAlias}"/>
         <property name="subject" value="${email.subject}"/>
         <property name="tagName" value="${email.tagName}"/>
+    </bean>
+
+    <!--七牛云Oss-->
+    <context:property-placeholder location="classpath:properties/qiniu.properties" ignore-unresolvable="true"/>
+    <bean name="qiniuOssBean" class="com.jnshu.tool.qiNiuOssUtil.QiNiuOssBean">
+        <property name="endpoint" value="${qiniu.endpoint}"/>
+        <property name="accessKeyId" value="${qiniu.accessKeyId}"/>
+        <property name="accessKeySecret" value="${qiniu.accessKeySecret}"/>
+        <property name="bucketName" value="${qiniu.bucketName}"/>
     </bean>
 </beans>

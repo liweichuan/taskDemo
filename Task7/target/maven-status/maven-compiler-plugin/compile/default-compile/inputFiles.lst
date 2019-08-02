@@ -1,4 +1,5 @@
 C:\task\Task7\src\main\java\com\jnshu\entity\User.java
+C:\task\Task7\src\main\java\com\jnshu\tool\qiNiuOssUtil\QiNiuOssUtil.java
 C:\task\Task7\src\main\java\com\jnshu\entity\Student.java
 C:\task\Task7\src\main\java\com\jnshu\serviceimpl\StudentServiceImpl.java
 C:\task\Task7\src\main\java\com\jnshu\tool\IntegerCastUtil.java
@@ -12,9 +13,13 @@ C:\task\Task7\src\main\java\com\jnshu\tool\Md5Util.java
 C:\task\Task7\src\main\java\com\jnshu\controller\PersonalPageController.java
 C:\task\Task7\src\main\java\com\jnshu\serviceimpl\UserServiceImpl.java
 C:\task\Task7\src\main\java\com\jnshu\entity\Result.java
+C:\task\Task7\src\main\java\com\jnshu\tool\aliRefererUtil\RefererUtil.java
 C:\task\Task7\src\main\java\com\jnshu\service\StudentService.java
+C:\task\Task7\src\main\java\com\jnshu\tool\aliPictureUtil\PictureUtil.java
+C:\task\Task7\src\main\java\com\jnshu\tool\aliRefererUtil\RefererBean.java
 C:\task\Task7\src\main\java\com\jnshu\service\UserService.java
 C:\task\Task7\src\main\java\com\jnshu\tool\StrConvertUtil.java
+C:\task\Task7\src\main\java\com\jnshu\tool\qiNiuOssUtil\QiNiuOssBean.java
 C:\task\Task7\src\main\java\com\jnshu\tool\StringUtil.java
 C:\task\Task7\src\main\java\com\jnshu\dao\UserDao.java
 C:\task\Task7\src\main\java\com\jnshu\tool\aliOssUtil\OssUtil.java
@@ -26,4 +31,5 @@ C:\task\Task7\src\main\java\com\jnshu\tool\LongDataTag.java
 C:\task\Task7\src\main\java\com\jnshu\tool\JwtUtil.java
 C:\task\Task7\src\main\java\com\jnshu\tool\aliMailUtil\AliMailBean.java
 C:\task\Task7\src\main\java\com\jnshu\controller\UserController.java
+C:\task\Task7\src\main\java\com\jnshu\tool\aliPictureUtil\PictureBean.java
 C:\task\Task7\src\main\java\com\jnshu\tool\aliMailUtil\AliMailUtil.java

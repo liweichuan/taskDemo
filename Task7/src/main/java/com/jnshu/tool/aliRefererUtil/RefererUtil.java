@@ -10,6 +10,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+/**防盗链
+ * */
+
 @Component
 public class RefererUtil {
     private static final Logger logger= LogManager.getLogger(RefererUtil.class);

@@ -8,6 +8,7 @@ import com.jnshu.tool.DesUtil;
 import com.jnshu.tool.IntegerCastUtil;
 import com.jnshu.tool.MessageUtil;
 import com.jnshu.tool.RedisUtil;
+//import com.jnshu.tool.aliMailUtil.AliMailUtil;
 import com.jnshu.tool.aliMailUtil.AliMailUtil;
 import com.jnshu.tool.aliSmsUtil.AliSmsUtil;
 import org.apache.ibatis.annotations.Param;
