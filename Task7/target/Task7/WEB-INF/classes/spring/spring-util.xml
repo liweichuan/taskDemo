@@ -110,7 +110,7 @@
     </bean>
 
     <!--阿里图片设置-->
-    <context:property-placeholder location="classpath:properties/picture.properties"/>
+    <context:property-placeholder location="classpath:properties/picture.properties" ignore-unresolvable="true"/>
     <bean id="pictureBean" class="com.jnshu.tool.aliPictureUtil.PictureBean">
         <property name="endpoint" value="${oss.endpoint}"/>
         <property name="accessKeyId" value="${oss.accessKeyId}"/>
@@ -130,7 +130,7 @@
     </bean>
 
     <!--七牛云Oss-->
-    <context:property-placeholder location="classpath:properties/qiniu.properties"/>
+    <context:property-placeholder location="classpath:properties/qiniu.properties" ignore-unresolvable="true"/>
     <bean name="qiniuOssBean" class="com.jnshu.tool.qiNiuOssUtil.QiNiuOssBean">
         <property name="endpoint" value="${qiniu.endpoint}"/>
         <property name="accessKeyId" value="${qiniu.accessKeyId}"/>

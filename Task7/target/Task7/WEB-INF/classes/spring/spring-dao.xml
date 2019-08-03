@@ -54,6 +54,7 @@
         <!--</array>-->
         <!--</property>-->
     </bean>
+
     <!--自动扫描basepackage-->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.jnshu.dao"/>

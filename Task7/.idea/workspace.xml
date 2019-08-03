@@ -8,234 +8,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18b0bb84-6a3c-4dd8-a7d1-d22e7c8327d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliPictureUtil/PictureBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliPictureUtil/PictureUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jnshu/tool/qiNiuOssUtil/QiNiuOssBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jnshu/tool/qiNiuOssUtil/QiNiuOssUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/picture.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/properties/qiniu.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/test/DownLoad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/test/PictureTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/test/QiNiuToAliTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/test/UpLoad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/DataTag.tld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/controller/PersonalPageController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/controller/StudentController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/dao/StudentDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/dao/UserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/entity/Result.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/entity/Student.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/entity/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/service/StudentService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/service/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/serviceimpl/LoginInterceptor.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/serviceimpl/StudentServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/serviceimpl/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/CookieUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/DesUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/IntegerCastUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/JwtUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/LongDataTag.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/Md5Util.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/MessageUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/RedisUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/StrConvertUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/StringUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/aliMailUtil/AliMailBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/aliMailUtil/AliMailUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/aliOssUtil/OssBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/aliOssUtil/OssUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/aliPictureUtil/PictureBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/aliPictureUtil/PictureUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/aliRefererUtil/RefererBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/aliRefererUtil/RefererUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/aliSmsUtil/AliSmsBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/aliSmsUtil/AliSmsUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/qiNiuOssUtil/QiNiuOssBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/qiNiuOssUtil/QiNiuOssUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/mapper/StudentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/properties/aliMail.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/properties/aliSms.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/properties/database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/properties/oss.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/properties/picture.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/properties/qiniu.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/properties/redis.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/properties/referer.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/spring/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/spring/spring-dao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/spring/spring-util.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/activation-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/aliyun-java-sdk-core-4.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/aliyun-java-sdk-dm-3.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/aliyun-java-sdk-ecs-4.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/aliyun-java-sdk-ram-3.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/aliyun-java-sdk-sts-3.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/aliyun-sdk-oss-3.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/commons-codec-1.11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/commons-io-2.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/commons-pool2-2.4.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/druid-1.1.10.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/fastjson-1.2.58.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/gson-2.8.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/httpclient-4.5.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/httpcore-4.4.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/jackson-annotations-2.9.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/jackson-core-2.9.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/jackson-databind-2.9.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/java-jwt-3.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/jaxb-api-2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/jaxb-core-2.1.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/jaxb-impl-2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/jcl-over-slf4j-1.7.21.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/jdom-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/jedis-2.8.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/jettison-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/json-taglib-0.4.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/jsqlparser-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/jstl-1.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/log4j-api-2.8.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/log4j-core-2.8.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/log4j-slf4j-impl-2.8.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/mybatis-3.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/mybatis-spring-1.3.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/mysql-connector-java-8.0.15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/okhttp-3.9.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/okio-1.13.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/pagehelper-5.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/protobuf-java-3.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/qiniu-java-sdk-7.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/slf4j-api-1.7.21.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/spring-aop-5.1.5.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/spring-beans-5.1.5.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/spring-context-5.1.5.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/spring-context-support-5.1.5.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/spring-core-5.1.5.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/spring-data-commons-1.12.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/spring-data-keyvalue-1.1.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/spring-data-redis-1.7.2.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/spring-expression-5.1.5.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/spring-jcl-5.1.5.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/spring-jdbc-5.1.5.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/spring-oxm-4.2.6.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/spring-test-5.1.5.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/spring-tx-5.1.5.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/spring-web-5.1.5.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/spring-webmvc-5.1.5.RELEASE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/standard-1.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/stax-api-1.0-2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/stax-api-1.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/spring-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/addStudent.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/editStudent.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/emailRegister.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/findAllStudent.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/findStudent.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/forEach.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/forTokens.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/json.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/loginSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/message.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/register.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/registerSuccess.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/upload.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/user.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/css/carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/css/footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/css/header.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/css/main1footer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/css/square.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/css/task14-chen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/css/task14.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/css/task14.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/css/task14.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/1231.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/123321.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/img3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/img4.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/img5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/photo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/photo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/picture.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task070201.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task0801main02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task0801main03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task0801main04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task0801main05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task0801main06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task0801main07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task0801main08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task0801main09.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task0801main10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task0801main11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task0801main12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task0801main13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task0801main14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task0801main15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task08021.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task08022.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task08023.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task08031.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task08032.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task08footer01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task08header01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task08header02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/image/task08header03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Task7/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/jnshu/tool/aliPictureUtil/PictureBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/jnshu/tool/aliPictureUtil/PictureUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/jnshu/tool/qiNiuOssUtil/QiNiuOssBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/jnshu/tool/qiNiuOssUtil/QiNiuOssUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/properties/picture.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/properties/qiniu.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/DownLoad.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/Task7.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/PictureTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/QiNiuToAliTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/UpLoad.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/10.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/log/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jnshu/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jnshu/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliMailUtil/AliMailUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliMailUtil/AliMailUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliOssUtil/OssUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliOssUtil/OssUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliRefererUtil/RefererUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliRefererUtil/RefererUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliSmsUtil/AliSmsUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliSmsUtil/AliSmsUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-util.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-util.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jnshu/tool/MessageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jnshu/tool/MessageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/DownLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/DownLoad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/LoggerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/LoggerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/test/OssTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/OssTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/PictureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/PictureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/QiNiuToAliTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/QiNiuToAliTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/RefererTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/RefererTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/SingleSendMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/SingleSendMail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/UpLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/UpLoad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/loginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/loginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/test/redisUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/redisUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/emailRegister.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/emailRegister.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registerSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registerSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Task7.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/MessageUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/MessageUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/aliOssUtil/OssUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/aliOssUtil/OssUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/qiNiuOssUtil/QiNiuOssUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/com/jnshu/tool/qiNiuOssUtil/QiNiuOssUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/properties/aliMail.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/properties/aliMail.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/spring/spring-dao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/spring/spring-util.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/classes/spring/spring-util.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/okhttp-3.9.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/okio-1.13.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7/WEB-INF/lib/qiniu-java-sdk-7.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7/WEB-INF/views/emailRegister.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/emailRegister.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7/WEB-INF/views/loginSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/loginSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7/WEB-INF/views/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7/WEB-INF/views/registerSuccess.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/registerSuccess.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Task7/WEB-INF/views/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Task7/WEB-INF/views/user.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jnshu/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jnshu/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jnshu/tool/aliMailUtil/AliMailUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jnshu/tool/aliMailUtil/AliMailUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jnshu/tool/aliOssUtil/OssUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jnshu/tool/aliOssUtil/OssUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jnshu/tool/aliRefererUtil/RefererUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jnshu/tool/aliRefererUtil/RefererUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jnshu/tool/aliSmsUtil/AliSmsUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jnshu/tool/aliSmsUtil/AliSmsUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-dao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-util.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-util.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/OssTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/OssTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/findAllStudent_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tmp/jsp/org/apache/jsp/WEB_002dINF/views/findAllStudent_jsp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jnshu/tool/MessageUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jnshu/tool/MessageUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DownLoad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/LoggerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/Task7.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/OssTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PictureTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/QiNiuToAliTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/RefererTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SingleSendMail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/UpLoad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/loginTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/redisUtilTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -270,7 +93,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/tool/qiNiuOssUtil/QiNiuOssUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="824">
               <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -280,31 +103,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliOssUtil/OssBean.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="368">
+              <caret line="333" column="38" selection-start-line="333" selection-end-line="334" />
             </state>
           </provider>
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/test/OssTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="54" column="8" selection-start-line="54" selection-end-line="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliOssUtil/OssUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="111" column="28" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+            <state relative-caret-position="136">
+              <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -313,10 +125,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/test/QiNiuToAliTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/tool/MessageUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="340">
+              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -325,22 +137,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1794">
-              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="226">
+              <caret line="178" column="35" selection-start-line="178" selection-start-column="35" selection-end-line="178" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/test/DownLoad.java">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/emailRegister.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+            <state relative-caret-position="115">
+              <caret line="164" column="59" selection-start-line="164" selection-start-column="59" selection-end-line="164" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliSmsUtil/AliSmsUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="56" column="67" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -379,11 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/tool/MessageUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/entity/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliMailUtil/AliMailBean.java" />
-        <option value="$PROJECT_DIR$/src/main/test/SingleSendMail.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/controller/UploadController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliOssUtil/OssBean.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
@@ -391,15 +204,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/findAllStudent.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/jnshu/tool/StringUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/jnshu/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jnshu/tool/CookieUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/emailRegister.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registerSuccess.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginSuccess.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/jnshu/serviceimpl/LoginInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jnshu/serviceimpl/UserServiceImpl.java" />
         <option value="$USER_HOME$/Desktop/什么是TPS，什么是每秒并发数，什么是90%Line？分别应该到达多少算符合系统上线的要求？.html" />
@@ -407,8 +213,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/properties/oss.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/properties/referer.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliRefererUtil/RefererBean.java" />
-        <option value="$PROJECT_DIR$/src/main/test/RefererTest.java" />
-        <option value="$PROJECT_DIR$/src/main/test/PictureTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliPictureUtil/PictureBean.java" />
         <option value="$PROJECT_DIR$/src/main/resources/properties/picture.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/jnshu/tool/qiNiuOssUtil/OssBean.java" />
@@ -418,18 +222,32 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliSmsUtil/AliSmsUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jnshu/tool/qiNiuOssUtil/OssUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliMailUtil/AliMailUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/properties/aliMail.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-util.xml" />
-        <option value="$PROJECT_DIR$/src/main/test/OssTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/test/QiNiuTest.java" />
-        <option value="$PROJECT_DIR$/src/main/test/UpLoad.java" />
-        <option value="$PROJECT_DIR$/src/main/test/DownLoad.java" />
-        <option value="$PROJECT_DIR$/src/main/test/QiNiuToAliTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliOssUtil/OssUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jnshu/tool/qiNiuOssUtil/QiNiuOssUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginSuccess.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registerSuccess.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload.jsp" />
+        <option value="$PROJECT_DIR$/src/main/test/DownLoad.java" />
+        <option value="$PROJECT_DIR$/src/main/test/LoggerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/test/SingleSendMail.java" />
+        <option value="$PROJECT_DIR$/src/main/test/UpLoad.java" />
+        <option value="$PROJECT_DIR$/src/main/test/loginTest.java" />
+        <option value="$PROJECT_DIR$/src/main/test/OssTest.java" />
+        <option value="$PROJECT_DIR$/src/main/test/PictureTest.java" />
+        <option value="$PROJECT_DIR$/src/main/test/QiNiuToAliTest.java" />
+        <option value="$PROJECT_DIR$/src/main/test/redisUtilTest.java" />
+        <option value="$PROJECT_DIR$/src/main/test/RefererTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/emailRegister.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jnshu/tool/MessageUtil.java" />
       </list>
     </option>
   </component>
@@ -476,17 +294,6 @@
           <item name="Task7 Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Task7 Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Task7 Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="jetty" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
       </expand>
       <select />
     </treeState>
@@ -505,8 +312,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -609,16 +414,6 @@
               <item name="Task7" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jnshu" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
-              <item name="qiNiuOssUtil" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Task7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Task7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -628,13 +423,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="properties" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Task7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Task7" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Task7" type="b2602c69:ProjectViewProjectNode" />
@@ -664,6 +452,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -715,7 +505,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.QiNiuToAliTest.AliToQiNiu">
+  <component name="RunManager" selected="Maven.Task7 [jetty:run]">
     <configuration name="DownLoad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DownLoad" />
       <module name="Task7" />
@@ -726,16 +516,6 @@
     <configuration name="UpLoad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UpLoad" />
       <module name="Task7" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="QiNiuTest.load" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Task7" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="QiNiuTest" />
-      <option name="METHOD_NAME" value="load" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -759,6 +539,31 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Task7 [jetty:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="jetty:run" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="tomcat9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.20" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -873,11 +678,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Maven.Task7 [jetty:run]" />
         <item itemvalue="JUnit.QiNiuToAliTest.AliToQiNiu" />
         <item itemvalue="JUnit.QiNiuToAliTest.QiNiuToAli" />
         <item itemvalue="Application.DownLoad" />
         <item itemvalue="Application.UpLoad" />
-        <item itemvalue="JUnit.QiNiuTest.load" />
       </list>
     </recent_temporary>
   </component>
@@ -914,7 +719,8 @@
       <workItem from="1564386391090" duration="50959000" />
       <workItem from="1564725267402" duration="8533000" />
       <workItem from="1564736933895" duration="4597000" />
-      <workItem from="1564744194259" duration="11994000" />
+      <workItem from="1564744194259" duration="12092000" />
+      <workItem from="1564794070073" duration="9183000" />
     </task>
     <task id="LOCAL-00001" summary="更新日志文件">
       <created>1563546914972</created>
@@ -986,7 +792,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564665027836</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="完成图片的迁移">
+      <created>1564756345376</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1564756345376</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1022,7 +835,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243574000" />
+    <option name="totallyTimeSpent" value="252855000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1035,8 +848,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22768533" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23146747" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -1047,7 +861,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.9516129" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.7112903" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.44516128" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1058,7 +872,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.32419354" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32903227" />
-      <window_info anchor="bottom" id="JRebel Executor" order="13" sideWeight="0.4977307" weight="0.6016129" />
+      <window_info anchor="bottom" id="JRebel Executor" order="13" sideWeight="0.4977307" weight="0.88870966" />
       <window_info anchor="bottom" id="JRebel Console" order="14" sideWeight="0.50226927" side_tool="true" weight="0.5419355" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.32903227" />
       <window_info anchor="bottom" id="Spring" order="16" weight="0.32741934" />
@@ -1087,72 +901,14 @@
     <MESSAGE value="更新短信api" />
     <MESSAGE value="更新邮件api" />
     <MESSAGE value="更新防盗链" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新防盗链" />
+    <MESSAGE value="完成图片的迁移" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成图片的迁移" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registerSuccess.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginSuccess.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="32" column="164" selection-start-line="32" selection-start-column="164" selection-end-line="32" selection-end-column="164" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/javax/servlet/http/HttpServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="789" selection-start-line="789" selection-end-line="789" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/reflect/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="497" selection-start-line="497" selection-end-line="497" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/serviceimpl/LoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/serviceimpl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
@@ -1168,16 +924,6 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/什么是TPS，什么是每秒并发数，什么是90%Line？分别应该到达多少算符合系统上线的要求？.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/test/SingleSendMail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliRefererUtil/RefererBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -1199,16 +945,6 @@
             <element signature="e#753#754#0" expanded="true" />
             <element signature="e#805#806#0" expanded="true" />
             <element signature="e#849#850#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/RefererTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="25" selection-start-line="25" selection-end-line="29" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1253,16 +989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="32" column="69" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliSmsUtil/AliSmsUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="16" selection-start-line="16" selection-end-line="17" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1362,34 +1088,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/PictureTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="256" column="17" selection-start-line="256" selection-start-column="17" selection-end-line="256" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/QiNiuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/QiNiuTest.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/com/qiniu/qiniu-java-sdk/7.2.23/qiniu-java-sdk-7.2.23-sources.jar!/com/qiniu/common/Zone.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -1402,78 +1101,10 @@
         <state relative-caret-position="-4278" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="86" column="38" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/controller/PersonalPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="96" column="21" selection-start-line="96" selection-start-column="21" selection-end-line="96" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/UpLoad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/redisUtilTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/io/FileOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="160" column="11" selection-start-line="160" selection-start-column="11" selection-end-line="160" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/DownLoad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliOssUtil/OssBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/test/OssTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="54" column="8" selection-start-line="54" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1491,16 +1122,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1794">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/properties/oss.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1508,20 +1129,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliOssUtil/OssUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliOssUtil/OssBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="111" column="28" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="90" column="64" selection-start-line="90" selection-start-column="64" selection-end-line="90" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/controller/PersonalPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="95" column="32" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginSuccess.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="26" column="108" selection-start-line="26" selection-start-column="108" selection-end-line="26" selection-end-column="108" />
+          <folding>
+            <element signature="n#style#0;n#a#1;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/registerSuccess.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/upload.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/DownLoad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="31" column="11" selection-start-column="2" selection-end-line="104" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/LoggerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="17" column="14" selection-start-column="2" selection-end-line="25" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/SingleSendMail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="36" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/UpLoad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#1658#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/loginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="20" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/OssTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="43" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/PictureTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="37" column="25" selection-end-line="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/redisUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="11" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/test/RefererTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="23" column="30" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="333" column="38" selection-start-line="333" selection-end-line="334" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/tool/qiNiuOssUtil/QiNiuOssUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="824">
           <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliOssUtil/OssUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="27" column="55" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/tool/aliSmsUtil/AliSmsUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="56" column="67" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1530,8 +1293,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/test/QiNiuToAliTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="414">
+          <caret line="33" column="7" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="178" column="35" selection-start-line="178" selection-start-column="35" selection-end-line="178" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/emailRegister.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="164" column="59" selection-start-line="164" selection-start-column="59" selection-end-line="164" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jnshu/tool/MessageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -23,7 +23,7 @@
         <div class="service">客服热线：010-594-78634</div>
         <div class="micrologo" >
             <%--                这里用来放头像  之后存在数据库        --%>
-            <img src="${pageContext.request.contextPath}/static/image/picture.jpg" alt="">
+            <img src="" alt="">
 
             <a style="margin: 10px;white-space: nowrap;display: inline-block;font-size: 15px"   class="message-color" href="${pageContext.request.contextPath}/user/login/0">登录</a>
 
@@ -169,7 +169,8 @@
             $.ajax({
                 //ajax发送请求信息
                 // url: "/user/message",
-                url: "http://localhost:8080/user/message",
+                url: "${pageContext.request.contextPath}"+"/user/message",
+                // url: "http://localhost:8080/user/message",
                 /* data:{"tb_phoneNum":tb_phoneNum},*/
                 //这里传数据
                 data:{"phone":phoneNumber},

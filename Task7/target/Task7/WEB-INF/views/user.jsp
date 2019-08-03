@@ -27,7 +27,7 @@
         <div class="service">客服热线：010-594-78634</div>
         <div class="micrologo" >
             <%--                这里用来放头像  之后存在数据库        --%>
-            <img src="${pageContext.request.contextPath}/static/image/picture.jpg" alt="">
+            <img src="" alt="">
 
 
 

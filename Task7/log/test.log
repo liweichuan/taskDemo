@@ -1,4 +1,50 @@
-22:29:01.867 ERROR com.jnshu.tool.aliOssUtil.OssUtil 107 load - 阿里下载开始
-22:29:03.783 ERROR com.jnshu.tool.aliOssUtil.OssUtil 112 load - 阿里下载完成
-22:29:03.784 ERROR com.jnshu.tool.qiNiuOssUtil.QiNiuOssUtil 43 upload - 七牛上传开始
-22:29:04.482 ERROR com.jnshu.tool.qiNiuOssUtil.QiNiuOssUtil 71 upload - 七牛上传完成
+14:58:05.039 ERROR com.jnshu.controller.UserController 64 sendMessage - 412125
+14:58:05.052 ERROR com.jnshu.controller.UserController 65 sendMessage - 13699670397
+14:58:05.182 ERROR com.jnshu.controller.UserController 68 sendMessage - 将验证码存入缓存成功
+14:58:05.749 ERROR com.jnshu.tool.aliSmsUtil.AliSmsUtil 60 sendMesg - {"Message":"OK","RequestId":"E3AB1C02-2D26-41BB-9DB4-A0CE2D3FA77A","BizId":"618613864815485614^0","Code":"OK"}
+14:58:20.807 ERROR com.jnshu.controller.UserController 103 register - User{id=null, username='liweichuan', password='woaixuchen1022', email='null', phone=13699670397, picture='null', message=412125, type=0, create_by='null', update_by='null', create_time=null, update_time=null}
+14:58:20.812 ERROR com.jnshu.serviceimpl.UserServiceImpl 44 register - 412125
+14:58:20.813 ERROR com.jnshu.serviceimpl.UserServiceImpl 46 register - 412125
+14:58:20.988 ERROR com.jnshu.serviceimpl.UserServiceImpl 67 register - 注册成功
+14:58:20.989 ERROR com.jnshu.serviceimpl.UserServiceImpl 68 register - User{id=null, username='liweichuan', password='d3010ac46e24814822e78f12803c92f5795c58a242f05708', email='null', phone=13699670397, picture='null', message=412125, type=0, create_by='null', update_by='null', create_time=null, update_time=null}
+14:58:45.681 ERROR com.jnshu.controller.UserController 151 checkLogin - liweichuan
+14:58:45.682 ERROR com.jnshu.serviceimpl.UserServiceImpl 96 checkLogin - liweichuan
+14:58:45.682 ERROR com.jnshu.serviceimpl.UserServiceImpl 97 checkLogin - woaixuchen1022
+14:58:45.690 ERROR com.jnshu.serviceimpl.UserServiceImpl 99 checkLogin - User{id=1, username='liweichuan', password='d3010ac46e24814822e78f12803c92f5795c58a242f05708', email='null', phone=13699670397, picture='null', message=412125, type=0, create_by='null', update_by='null', create_time=null, update_time=null}
+14:58:45.692 ERROR com.jnshu.controller.UserController 155 checkLogin - liweichuan
+14:58:45.692 ERROR com.jnshu.controller.UserController 156 checkLogin - 登录成功
+14:58:45.694 ERROR com.jnshu.controller.UserController 166 checkLogin - cookie的有效路径是/cookie的有效时间是180cookie生成的名字为token
+14:58:49.052 ERROR com.jnshu.serviceimpl.LoginInterceptor 32 preHandle - 拦截器被调用
+14:58:49.053 ERROR com.jnshu.serviceimpl.LoginInterceptor 36 preHandle - 开始遍历cookie
+14:58:49.068 ERROR com.jnshu.controller.PersonalPageController 57 findUserById - [User{id=1, username='liweichuan', password='d3010ac46e24814822e78f12803c92f5795c58a242f05708', email='null', phone=13699670397, picture='null', message=412125, type=0, create_by='null', update_by='null', create_time=null, update_time=null}]
+14:58:52.409 ERROR com.jnshu.serviceimpl.LoginInterceptor 32 preHandle - 拦截器被调用
+14:58:52.409 ERROR com.jnshu.serviceimpl.LoginInterceptor 36 preHandle - 开始遍历cookie
+14:59:06.602 ERROR com.jnshu.serviceimpl.LoginInterceptor 32 preHandle - 拦截器被调用
+14:59:06.603 ERROR com.jnshu.serviceimpl.LoginInterceptor 36 preHandle - 开始遍历cookie
+14:59:06.623 ERROR com.jnshu.controller.PersonalPageController 85 springUpload - 2d10aa9b80909e756e86901cc96c085b
+14:59:06.624 ERROR com.jnshu.controller.PersonalPageController 87 springUpload - 1/1564815525693
+14:59:09.489 ERROR com.jnshu.tool.aliOssUtil.OssUtil 35 upFile - 您已经创建Bucket：jnshu-task7。
+14:59:09.581 ERROR com.jnshu.tool.aliOssUtil.OssUtil 45 upFile - Bucket jnshu-task7的信息如下：
+14:59:09.582 ERROR com.jnshu.tool.aliOssUtil.OssUtil 46 upFile - 	数据中心：oss-cn-shanghai
+14:59:09.582 ERROR com.jnshu.tool.aliOssUtil.OssUtil 47 upFile - 	创建时间：Mon Jul 29 09:35:44 CST 2019
+14:59:09.582 ERROR com.jnshu.tool.aliOssUtil.OssUtil 48 upFile - 	用户标志：Owner [name=1414755571146142,id=1414755571146142]
+14:59:09.854 ERROR com.jnshu.serviceimpl.LoginInterceptor 32 preHandle - 拦截器被调用
+14:59:09.855 ERROR com.jnshu.serviceimpl.LoginInterceptor 36 preHandle - 开始遍历cookie
+14:59:09.861 ERROR com.jnshu.controller.PersonalPageController 57 findUserById - [User{id=1, username='liweichuan', password='d3010ac46e24814822e78f12803c92f5795c58a242f05708', email='null', phone=13699670397, picture='https://jnshu-task7.oss-cn-shanghai.aliyuncs.com/picture/liweichuan', message=412125, type=0, create_by='null', update_by='null', create_time=null, update_time=1564815549729}]
+14:59:25.127 ERROR com.jnshu.controller.UserController 85 sendEmail - 900816
+14:59:25.128 ERROR com.jnshu.controller.UserController 86 sendEmail - 1946931904@qq.com
+14:59:25.132 ERROR com.jnshu.controller.UserController 89 sendEmail - 将验证码存入缓存成功
+14:59:25.164 ERROR com.jnshu.tool.aliMailUtil.AliMailUtil 47 sendMail - 发送邮件
+14:59:26.004 ERROR com.jnshu.tool.aliMailUtil.AliMailUtil 49 sendMail - {"requestId":"BC2CFF34-8749-4EE5-A671-EE8744961888","envId":"17870283378992716388"}
+14:59:47.075 ERROR com.jnshu.controller.UserController 103 register - User{id=null, username='xuchen', password='woaixuchen1022', email='1946931904@qq.com', phone=null, picture='null', message=900816, type=1, create_by='null', update_by='null', create_time=null, update_time=null}
+14:59:47.078 ERROR com.jnshu.serviceimpl.UserServiceImpl 50 register - 900816
+14:59:47.079 ERROR com.jnshu.serviceimpl.UserServiceImpl 52 register - 900816
+14:59:47.089 ERROR com.jnshu.serviceimpl.UserServiceImpl 67 register - 注册成功
+14:59:47.090 ERROR com.jnshu.serviceimpl.UserServiceImpl 68 register - User{id=null, username='xuchen', password='b64c8f30a885a7031a029014460f3e02b678c96247f72c2f', email='1946931904@qq.com', phone=null, picture='null', message=900816, type=1, create_by='null', update_by='null', create_time=null, update_time=null}
+15:00:08.971 ERROR com.jnshu.controller.UserController 151 checkLogin - 1946931904@qq.com
+15:00:08.972 ERROR com.jnshu.serviceimpl.UserServiceImpl 96 checkLogin - 1946931904@qq.com
+15:00:08.973 ERROR com.jnshu.serviceimpl.UserServiceImpl 97 checkLogin - woaixuchen1022
+15:00:08.979 ERROR com.jnshu.serviceimpl.UserServiceImpl 99 checkLogin - User{id=2, username='xuchen', password='b64c8f30a885a7031a029014460f3e02b678c96247f72c2f', email='1946931904@qq.com', phone=null, picture='null', message=900816, type=1, create_by='null', update_by='null', create_time=null, update_time=null}
+15:00:08.980 ERROR com.jnshu.controller.UserController 155 checkLogin - 1946931904@qq.com
+15:00:08.981 ERROR com.jnshu.controller.UserController 156 checkLogin - 登录成功
+15:00:08.981 ERROR com.jnshu.controller.UserController 166 checkLogin - cookie的有效路径是/cookie的有效时间是180cookie生成的名字为token
